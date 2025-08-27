@@ -7,3 +7,9 @@ flowchart TD
   B --> D{"OP3"}
   
 ```
+```mermaid
+graph TD;
+  A[Inicio] --> B{Nota>6};
+  B --> |SIM| C[Aprovado];
+  B --> |NÃO| D[Reprovado];
+```
