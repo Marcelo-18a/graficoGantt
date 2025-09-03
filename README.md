@@ -60,3 +60,13 @@ gantt
     Inspeção :a8, after a7, 5d
     Casa entregue :milestone, after a8, 0d
 ```
+
+
+```mermaid
+graph TD
+  subgraph Matriz
+A1["C8"]:::Branco --> A2["C20"]:::amarelo --> A3["V50"]:::laranja --> A4["V100"]:::vermelho
+
+end
+
+```
