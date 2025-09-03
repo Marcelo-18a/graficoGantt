@@ -27,38 +27,36 @@ section 2ºSemestre
 
 
 
-
-
-
-
-
-
-
-
 ```mermaid
 gantt
-    title Cronograma do Projeto – Construção de uma Casa
+    title Cronograma do Projeto - Construção de uma Casa
     dateFormat  YYYY-MM-DD
     excludes    weekends
 
     section Planejamento
-    Planejamento e Aprovações     :a1, 2025-10-01, 20d
+    Planejamento e Aprovações :a1, 2025-10-01, 20d
 
     section Preparação
-    Preparação do Terreno         :a2, after a1, 10d
+    Terreno :a2, after a1, 10d
 
     section Fundação
-    Fundação                      :a3, after a2, 15d
+    Fundação :a3, after a2, 15d
+    Fundação concluída :milestone, after a3, 0d
 
     section Estrutura
-    Estrutura da Casa             :a4, after a3, 30d
+    Estrutura :a4, after a3, 30d
+    Estrutura concluída :milestone, after a4, 0d
 
     section Instalações
-    Instalações Elétricas e Hidráulicas :a5, after a4, 20d
+    Elétrica e Hidráulica :a5, after a4, 20d
+    Instalações concluídas :milestone, after a5, 0d
 
     section Acabamentos
-    Acabamento Interno            :a6, after a5, 25d
-    Acabamento Externo           :a7, after a6, 15d
+    Interno :a6, after a5, 25d
+    Externo :a7, after a6, 15d
+    Acabamentos concluídos :milestone, after a7, 0d
 
     section Finalização
-    Inspeção Final e Entrega      :a8, after a7, 5d
+    Inspeção :a8, after a7, 5d
+    Casa entregue :milestone, after a8, 0d
+```
